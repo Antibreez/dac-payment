@@ -1,11 +1,4 @@
 (function () {
-  var phoneInput = document.querySelector("input[name='phone']");
-
-  var imPhone = new Inputmask('+7(999)999-99-99');
-  imPhone.mask(phoneInput);
-})();
-
-(function () {
   var nameInput = document.querySelector("input[name='name']");
   var surnameInput = document.querySelector("input[name='surname']");
   var patronymicInput = document.querySelector("input[name='patronymic']");
