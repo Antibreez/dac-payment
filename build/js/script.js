@@ -47,7 +47,7 @@
   };
 
   var onEmailInput = function () {
-    isEmailValid = emailInput.validity.valid;
+    isEmailValid = emailInput.validity.valid && emailInput.value.length > 0;
     checkValidity();
   };
 
@@ -67,7 +67,7 @@
   };
 
   var onPhoneInput = function () {
-    isPhoneValid = !/_/.test(phoneInput.value);
+    isPhoneValid = !/_/.test(phoneInput.value) && phoneInput.value.length > 0;
     checkValidity();
   };
 
