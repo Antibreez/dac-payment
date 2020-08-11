@@ -434,7 +434,7 @@ template {
 
 .payment-form__bill {
   margin: 0;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 56px;
   line-height: 84px;
   text-align: center;
@@ -451,6 +451,7 @@ template {
   font-size: 32px;
   line-height: 48px;
   text-align: center;
+  color: #fff;
 }
 
 .payment-form__instruction {
@@ -460,6 +461,7 @@ template {
   font-size: 15px;
   line-height: 22px;
   text-align: center;
+  color: #fff;
 }
 
 .payment-form__label {
@@ -524,6 +526,7 @@ template {
   padding-top: 3px;
   font-size: 14px;
   line-height: 15px;
+  color: #fff;
 }
 
 .payment-form__text-wrapper.js--error {
@@ -547,9 +550,13 @@ template {
   background-color: #ffffff;
 }
 
+.payment-form__text-wrapper label:hover {
+  cursor: pointer;
+}
+
 .payment-form__text-wrapper label:hover::before {
   cursor: pointer;
-  border-color: #00adef;
+  border-color: #ccaa66;
 }
 
 .payment-form__text-wrapper label.js--error::before {
@@ -575,6 +582,7 @@ template {
   font-weight: 400;
   font-size: 14px;
   line-height: 15px;
+  color: #fff;
 }
 
 .payment-form__radio::before {
@@ -604,6 +612,10 @@ template {
 }
 
 .payment-form__payment-type:focus + label::before {
+  border: 1px solid #ccaa66;
+}
+
+.payment-form__payment-type:hover + label::before {
   border: 1px solid #ccaa66;
 }
 
